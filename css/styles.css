@@ -10,6 +10,7 @@
 
     --button-color:#2196F3;
     --button-acvive-color:#188CE8;
+    --filter-btn-border-color: #ECECEC;
 
     --filter-colour:#F5F4FA;
     --filter-active-color:#2196F3;
@@ -17,8 +18,8 @@
     --filter-container-border-color: #EEEEEE;
     --filter-set-gap: 30px;
     --filter-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    
     --team-border-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --header-container-border: 1px solid #ECECEC;
 }
 
 p,
@@ -79,7 +80,6 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid orchid;
 }
 
 .visually-hidden{
@@ -101,6 +101,12 @@ body{
 
 .header{
     font-family:'Roboto';
+}
+
+.header-container{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--header-container-border);
 }
 
 .header-container {
@@ -184,6 +190,9 @@ body{
 /*--------------footer--------------*/
 .footer{
     background-color:var(--accent-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 /*address*/
@@ -193,6 +202,7 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
+    margin-bottom: 20px;
 }
 
 
@@ -217,7 +227,6 @@ body{
 
 .call{
     display: inline-block;
-    padding-bottom: 60px;
 }
 
 
@@ -241,7 +250,9 @@ body{
     text-transform: uppercase;
     width: 696px;
     margin-bottom: 40px;
-
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*button*/
@@ -270,6 +281,10 @@ body{
 }
 
 /*benefits*/
+.benefits{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .benefits-title{
     color: var(--primary-text-color);
@@ -278,6 +293,7 @@ body{
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 
@@ -290,10 +306,7 @@ body{
 
 .benefits-list{
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc(100% / 4);
     gap: 30px;
-    padding: 94px, 0px. 94px;
 }
 
 .benefits-wrap{
@@ -304,6 +317,12 @@ body{
 }
 
 /*examples*/
+
+.examples{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
 .examples-title{
     color: var(--primary-text-color);
     font-weight: 700;
@@ -323,6 +342,8 @@ body{
 /*our-team*/
 .our-team-section{
     background-color: var(--additional-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .our-team{
@@ -338,7 +359,6 @@ body{
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -364,6 +384,7 @@ body{
 .our-team >.team-card{
     background-color: var(--primary-background-color);
     box-shadow: var(--team-border-shadow);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-wrap{
@@ -376,8 +397,12 @@ body{
 
 /*--------------Portfoio------------ */
 
-.filter{
+.filter-section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
 
+.filter{
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -393,7 +418,7 @@ body{
     min-width: 73px;
     padding: 6px 22px 6px 22px;
     justify-content: center;
-
+    outline: none;
 }
 
 .filter:hover,
@@ -410,8 +435,6 @@ body{
 }
 
 .filter-set{
-    padding: 0;
-    margin: 0;
     list-style: none;
 
     display: flex;
@@ -419,10 +442,12 @@ body{
 
     margin-top: calc -1 * var(--filter-set-gap);
     margin-left: calc -1 * var(--filter-set-gap);
+    margin-bottom: 50px;
 }
 
 .filter-card{
     box-shadow: var(--filter-box-shadow);
+    
 }
 
 .filter-card-content{
@@ -433,6 +458,7 @@ body{
     flex-basis: calc(100% / 3 - var(--filter-set-gap));
     margin-left: var(--filter-set-gap);
     margin-top: var(--filter-set-gap);
+    
 }
 
 .project-name {
