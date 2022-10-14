@@ -151,16 +151,13 @@ body{
     padding: 20px 40px;
 }
 
-.site-nav-list .item: :last-child{
-
-}
-
 .site-nav-list .item{
     margin-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
+    padding: ;
 }
 
 .navigation-link{
@@ -198,6 +195,7 @@ body{
     display: flex;
     gap: 50px;
     margin-left: auto;
+    padding: 25px;
 }
 
 .auth-nav-list .auth-link {
@@ -260,6 +258,7 @@ body{
     padding-top: 200px;
     padding-bottom: 200px;
     display: flex;
+    text-align: center;
 
 }
 
@@ -274,7 +273,7 @@ body{
     display: block;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /*button*/
@@ -457,16 +456,14 @@ padding-bottom: 94px;
 
 .filter-set{
     list-style: none;
-
     display: flex;
     flex-wrap: wrap;
-
-    margin-top: calc -1 * var(--filter-set-gap);
-    margin-left: calc -1 * var(--filter-set-gap);
+    gap: 30px;
 }
 
-.filter-card{
-    
+.filter-item {
+    width: calc((100%-2*30px) / 3);
+
 }
 
 .filter-card-content{
@@ -474,16 +471,6 @@ padding-bottom: 94px;
     border-left: var(--filter-container-border-color);
     border-bottom: var(--filter-container-border-color);
     border-right: var(--filter-container-border-color);
-}
-
-.filter-set > .filter-item {
-    flex-basis: calc((100%-2*30px) / 3);
-    margin-left: var(--filter-set-gap);
-    margin-top: var(--filter-set-gap);
-}
-
-.filter-set > .filter-item: nth-child(3) {
-    margin-right: 0;
 }
 
 .project-name {
