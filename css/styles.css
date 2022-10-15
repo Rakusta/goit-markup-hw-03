@@ -121,14 +121,13 @@ body{
     text-align: center;
 }
 
-.logo > .logo-link{
+.logo-link{
     color:var(--logo-blue-color); 
     font-family: 'Raleway','sans-serif';
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
     letter-spacing: 0.03em;
-    display: flex;
 }
 
 .logo-accent-black{
@@ -138,12 +137,15 @@ body{
 }
 
 /* Site navigaion */
+
+.header-navigation {
+    margin-left: 93px;
+
+}
 .site-nav-list {
     display: flex;
     gap: 50px;
     align-items: center;
-    margin-left: 93px;
-    padding: 20px 40px;
 }
 
 .site-nav-list .item{
@@ -160,6 +162,9 @@ body{
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
@@ -189,7 +194,6 @@ body{
     display: flex;
     gap: 50px;
     margin-left: auto;
-    padding: 25px;
 }
 
 .auth-nav-list .auth-link {
@@ -202,6 +206,11 @@ body{
     color:var(--logo-blue-color);                                       
 }
 
+.auth-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 /*--------------footer--------------*/
 .footer{
@@ -214,13 +223,6 @@ body{
 
 .logo-accent-white{
     color:var(--hero-text-color);
-}
-
-.address-item{
-    margin-bottom: 9px;
-}
-.address-item:first-child{
-    margin-top: 20px;
 }
 
 .link-address-address{
@@ -239,6 +241,20 @@ body{
     color:var(--hero-text-color-low-wisibility);
 }
 
+.footer-address{
+    margin-top: 20px;
+}
+
+.address-item {
+    padding-bottom: 9px;
+}
+
+.address-item: last-child {
+    padding-bottom: 0;
+}
+
+
+
 .call{
     display: inline-block;
 }
@@ -251,7 +267,6 @@ body{
     background-color: var(--accent-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    display: flex;
     text-align: center;
 
 }
@@ -283,8 +298,7 @@ body{
     letter-spacing: 0.06em;
     cursor: pointer;
     border-radius: 4px;
-    display: block;
-    margin: 0 auto;
+    padding: 10px 32px;
 }
 
 .button:hover,
@@ -319,12 +333,7 @@ body{
 .benefits-list{
     display: flex;
     gap: 30px;
-}
-
-.benefits-wrap{
-    display: flex;
-    gap: 30px;
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% - 3 * 30px) / 4);
 
 }
 
@@ -453,12 +462,10 @@ padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    width: calc((100% - 2*30px) / 3);
 }
 
 .filter-item {
-    width: calc((100%-2*30px) / 3);
-
+    width: calc((100% - 2*30px) / 3);
 }
 
 .filter-card-content{
