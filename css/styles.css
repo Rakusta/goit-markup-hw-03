@@ -245,15 +245,9 @@ body{
     margin-top: 20px;
 }
 
-.address-item {
+.address-item:not(:last-child) {
     padding-bottom: 9px;
 }
-
-.address-item: last-child {
-    padding-bottom: 0;
-}
-
-
 
 .call{
     display: inline-block;
@@ -465,7 +459,7 @@ padding-bottom: 94px;
 }
 
 .filter-item {
-    width: calc((100% - 2*30px) / 3);
+    width: calc((100% - 2 * 30px) / 3);
 }
 
 .filter-card-content{
