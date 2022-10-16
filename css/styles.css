@@ -46,6 +46,10 @@ ol {
     padding-left: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -173,7 +177,6 @@ body{
 .site-nav-list,.link-address,.link:hover,
 .site-nav-list,.link-address,.link:focus{
     color:var(--logo-blue-color); 
-    text-decoration: none;                                      
 }
 
 .site-nav-list .link.current{
@@ -261,7 +264,6 @@ body{
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-
 }
 
 .hero-title{
@@ -460,7 +462,7 @@ padding-bottom: 94px;
 }
 
 .filter-item {
-    width: calc((100% - 2 * 30px) / 3);
+    flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .filter-card-content{
